@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIMER"
+        android:textColor="#9E9E9E"
+        android:textSize="18sp"
+        android:letterSpacing="0.2"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textColor="#00E5FF"
+        android:textSize="54sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="36dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="36dp">
+
+        <EditText
+            android:id="@+id/etHours"
+            android:layout_width="72dp"
+            android:layout_height="56dp"
+            android:background="#1E1E1E"
+            android:gravity="center"
+            android:hint="HH"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#757575"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etMinutes"
+            android:layout_width="72dp"
+            android:layout_height="56dp"
+            android:background="#1E1E1E"
+            android:gravity="center"
+            android:hint="MM"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#757575"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" : "
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etSeconds"
+            android:layout_width="72dp"
+            android:layout_height="56dp"
+            android:background="#1E1E1E"
+            android:gravity="center"
+            android:hint="SS"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#757575"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnStartPause"
+            android:layout_width="135dp"
+            android:layout_height="56dp"
+            android:text="START"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#00C853"
+            android:layout_marginEnd="16dp" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="135dp"
+            android:layout_height="56dp"
+            android:text="RESET"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#424242" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStopAlarm"
+        android:layout_width="286dp"
+        android:layout_height="56dp"
+        android:text="STOP ALARM"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#D50000"
+        android:layout_marginTop="24dp"
+        android:visibility="gone" />
+
+</LinearLayout>
